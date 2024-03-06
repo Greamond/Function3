@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Function3.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace Function3
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static DBConnection conn = new DBConnection();
+        public static MainWindow init;
+
         public MainWindow()
         {
             InitializeComponent();
+            init = this;
             OpenPage(new Pages.Login());
         }
 

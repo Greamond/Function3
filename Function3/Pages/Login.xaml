@@ -10,9 +10,9 @@
 
     <Grid Background="White">
         <Label Content="Логин" VerticalAlignment="Top" HorizontalContentAlignment="Center" Margin="0,100,0,0" FontSize="24"/>
-        <TextBox VerticalAlignment="Top" Margin="280,145,280,0" Height="30" FontSize="18"/>
+        <TextBox x:Name="LoginDoc" VerticalAlignment="Top" Margin="280,145,280,0" Height="30" FontSize="18"/>
         <Label Content="Пароль" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center" Margin="0,180,0,0" FontSize="24"/>
-        <PasswordBox VerticalAlignment="Top"  Margin="280,225,280,0" Height="30"  FontSize="18"/>
+        <PasswordBox x:Name="PasswordDoc" VerticalAlignment="Top"  Margin="280,225,280,0" Height="30"  FontSize="18"/>
         <Button Content="Войти" VerticalAlignment="Top"  Margin="280,270,280,0" Height="30" Click="Log_Click"  FontSize="18"/>
     </Grid>
 </Page>

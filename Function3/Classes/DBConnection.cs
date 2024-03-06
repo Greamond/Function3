@@ -11,14 +11,14 @@ namespace Function3.Classes
         public DbSet<Doctor> DoctorsRus { get; set; }
         public DbSet<MedicalCard> MedicalCardsRus { get; set; }
 
-        public DBConnection(DbContextOptions<DBConnection> options) : base(options)
+        public DBConnection()
         {
             Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=student.permaviat.ru;Trusted_Connection=No;DataBase=base1_ISP_21_2_23;User=ISP_21_2_23;PWD=3frQxZ83o#;");
+            optionsBuilder.UseSqlServer("server=student.permaviat.ru;Trusted_Connection=No;DataBase=base2_ISP_21_2_19;User=ISP_21_2_19;PWD=D17IDNLg4#;");
 
         }
     }

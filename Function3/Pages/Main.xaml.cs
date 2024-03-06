@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,13 +23,14 @@ namespace Function3.Pages
         public Main()
         {
             InitializeComponent();
+            CreateUI();
         }
 
         public void CreateUI()
         {
-            foreach (var item in MainWindow.conn.Patients)
+            foreach (var item in MainWindow.conn.MedicalCardsRus.ToList())
             {
-                Parrent.Children.Add(new Elements.MedCard_itm());
+                Parrent.Children.Add(new Elements.MedCard_itm(item));
             }
         }
     }

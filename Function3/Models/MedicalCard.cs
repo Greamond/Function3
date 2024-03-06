@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Function3.Models
@@ -13,7 +14,9 @@ namespace Function3.Models
         /// <summary>
         /// Код пациента
         /// </summary>
-        public int IdPatient { get; set; }
+        [Column("IdPatient")]
+        public int PatientId { get; set; }
+        public virtual Patient Patient { get; set; }
         /// <summary>
         /// Информация о пциенте
         /// </summary>

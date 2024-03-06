@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Function3.Elements.MedCard_itm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Function3.Elements"
+             mc:Ignorable="d" >
+    <Border Background="Beige" CornerRadius="20">
+        <Grid>
+            <Label x:Name="NumMedCard" Content="№249237493274" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalContentAlignment="Center" Margin="0,10,0,0"/>
+            <Label x:Name="Fullname" Content="Русанов Николай Алексеевич" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalContentAlignment="Center"
+                   Margin="0,30,0,0"/>
+            <StackPanel Margin="20,70,20,20" VerticalAlignment="Top">
+                <TextBlock x:Name="Inf" Text="Информация: чтото о тчсопшкушпваи вмопщуdfhгкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Simptoms" Text="Симптомы: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Diagnosis" Text="Диагноз: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="TreatmentRecom" Text="Лечебные рекомендации: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Recipes" Text="Рецепты: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="DirectionSpecialist" Text="Направления: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Research" Text="Исследования: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+                <TextBlock x:Name="Procedures" Text="Процедуры: чтото о тчсопшкушпваи вмопщугкщвапвап" FontSize="16" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

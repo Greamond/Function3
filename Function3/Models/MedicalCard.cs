@@ -39,7 +39,7 @@ namespace Function3.Models
         /// </summary>
         public string DirectionSpecialist { get; set; }
         /// <summary>
-        /// Иисследования
+        /// Исследования
         /// </summary>
         public string Research { get; set; }
         /// <summary>

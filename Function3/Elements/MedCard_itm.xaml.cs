@@ -11,24 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Function3.Pages
+namespace Function3.Elements
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для MedCard_itm.xaml
     /// </summary>
-    public partial class Main : Page
+    public partial class MedCard_itm : UserControl
     {
-        public Main()
+        public MedCard_itm()
         {
             InitializeComponent();
-        }
-
-        public void CreateUI()
-        {
-            foreach (var item in MainWindow.conn.Patients)
-            {
-                Parrent.Children.Add(new Elements.MedCard_itm());
-            }
         }
     }
 }

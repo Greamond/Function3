@@ -8,6 +8,7 @@ namespace Function3.Classes
 {
     public class DBConnection : DbContext
     {
+        public DbSet<Patient> Patients { get; set; }
         public DbSet<Doctor> DoctorsRus { get; set; }
         public DbSet<MedicalCard> MedicalCardsRus { get; set; }
 

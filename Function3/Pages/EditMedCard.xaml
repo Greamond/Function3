@@ -1,0 +1,33 @@
+﻿<Page x:Class="Function3.Pages.EditMedCard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Function3.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1450" d:DesignWidth="800"
+      Title="EditMedCard">
+
+    <Grid Background="White">
+        <Label x:Name="NumMedCard" Content="№249237493274" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalContentAlignment="Center" Margin="0,10,0,0"/>
+        <Label x:Name="Fullname" Content="Русанов Николай Алексеевич" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalContentAlignment="Center"
+                    Margin="0,30,0,0"/>
+        <Label Content="Информация:" FontSize="16" Margin="20,70,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Inf" FontSize="16" Margin="20,100,20,0" VerticalAlignment="Top"/>
+        <Label Content="Симптомы: " FontSize="16" Margin="20,130,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Simptoms" FontSize="16" Margin="20,160,20,0" VerticalAlignment="Top"/>
+        <Label Content="Диагноз: " FontSize="16" Margin="20,190,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Diagnosis" FontSize="16" Margin="20,220,20,0" VerticalAlignment="Top"/>
+        <Label Content="Лечебные рекомендации: " FontSize="16" Margin="20,250,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TreatmentRecom" FontSize="16" Margin="20,280,20,0" VerticalAlignment="Top"/>
+        <Label Content="Рецепты: " FontSize="16" Margin="20,310,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Recipes" FontSize="16" Margin="20,340,20,0" VerticalAlignment="Top"/>
+        <Label Content="Направления: " FontSize="16" Margin="20,370,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DirectionSpecialist" FontSize="16" Margin="20,400,20,0" VerticalAlignment="Top"/>
+        <Label Content="Исследования: " FontSize="16" Margin="20,430,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Research" FontSize="16" Margin="20,460,20,0" VerticalAlignment="Top"/>
+        <Label Content="Процедуры: " FontSize="16" Margin="20,490,20,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Procedures" FontSize="16" Margin="20,520,20,0" VerticalAlignment="Top"/>
+        <Button Content="Изменить" FontSize="16" Margin="300,550,300,0" VerticalAlignment="Top" Click="Edit_Click" />
+    </Grid>
+</Page>
